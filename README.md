@@ -33,8 +33,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/resume-website.git
-   cd resume-website
+   git clone https://github.com/rkneela0912/portfolio.git
+   cd portfolio
    ```
 
 2. **Install dependencies**
