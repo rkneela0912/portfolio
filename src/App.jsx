@@ -288,7 +288,7 @@ function App() {
             <ExperienceCard
               period="2022 - Present"
               title="Power Platform & AI Solutions Architect"
-              company="Department of Defense - Washington Headquarters Services"
+              //company="Department of Defense - Washington Headquarters Services"
               description="Leading AI enablement initiatives and Copilot development. Architected custom Microsoft Copilot agents achieving 40% improvement in task completion accuracy. Implemented enterprise-grade conversational AI solutions using Azure Bot Framework."
               achievements={[
                 "🎯 Power Apps Development: Built 30+ Canvas Apps with complex business logic, created 15+ Model-driven Apps with custom entities and business process flows",
@@ -304,7 +304,7 @@ function App() {
             <ExperienceCard
               period="2019 - 2022"
               title="Senior Power Platform & SharePoint Consultant"
-              company="Health Resources and Services Administration"
+              //company="Health Resources and Services Administration"
               description="Managed complex SharePoint migrations and developed comprehensive Power Platform solutions. Extended Dynamics 365 CE functionalities and implemented AI Builder for machine learning model development."
               achievements={[
                 "📱 Power Apps Portfolio: Delivered 20+ Canvas Apps for field operations, 10+ Model-driven Apps for case management with custom PCF controls",
@@ -318,9 +318,9 @@ function App() {
               ]}
             />
             <ExperienceCard
-              period="2015 - 2019"
+              period="2014 - 2019"
               title="Power Platform & SharePoint Solutions Developer"
-              company="New Orleans Police Department"
+              //company="New Orleans Police Department"
               description="Led full-stack development lifecycle and SharePoint migration projects. Developed custom SharePoint web parts using SPFx and implemented responsive user interfaces with canvas applications."
               achievements={[
                 "🚀 Power Apps Foundation: Built first-generation Canvas Apps for incident reporting, Model-driven Apps for case tracking with custom forms",
