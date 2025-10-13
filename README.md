@@ -1,4 +1,4 @@
-# Ranjith Neela - Professional Resume Website
+# A Template for a Professional Resume Website
 
 A modern, interactive resume website built with React, featuring an AI-powered chatbot and comprehensive skill showcases. This website demonstrates expertise in SharePoint development, Power Platform, AI enablement engineering, and conversational AI solutions.
 
