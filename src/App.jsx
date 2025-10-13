@@ -289,7 +289,21 @@ function App() {
               period="2022 - Present"
               title="Power Platform & AI Solutions Architect"
               //company="Department of Defense - Washington Headquarters Services"
-              description="Led full-stack development lifecycle and SharePoint migration projects. Developed custom SharePoint web parts using SPFx and implemented responsive user interfaces with canvas applications. Leading AI enablement initiatives and Copilot development. Architected custom Microsoft Copilot agents achieving 40% improvement in task completion accuracy. Implemented enterprise-grade conversational AI solutions using Azure Bot Framework. Managed complex SharePoint migrations and developed comprehensive Power Platform solutions. Extended Dynamics 365 CE functionalities and implemented AI Builder for machine learning model development."
+              description="Led full-stack development lifecycle and SharePoint migration projects. Developed custom SharePoint web parts using SPFx and implemented responsive user interfaces with canvas applications. Leading AI enablement initiatives and Copilot development. Architected custom Microsoft Copilot agents achieving 40% improvement in task completion accuracy. Implemented enterprise-grade conversational AI solutions using Azure Bot Framework. Managed complex SharePoint migrations and developed comprehensive Power Platform solutions. Extended Dynamics 365 CE functionalities and implemented AI Builder for machine learning model development.Developed custom Power Apps solutions that automated manual processes, reducing operational time by 60% and empowering over 1,000 users with streamlined workflows.
+
+Implemented Power Automate integrations with Sharepoint, Dataverse, enhancing data governance and achieving 40% faster processing while minimizing errors in business systems.
+
+Led the architecture of low-code applications using Power Platform, resulting in annual cost savings of $150,000 through process optimization and waste elimination.
+
+Designed AI-enabled Power Apps with AI Builder, improving decision-making insights and increasing workforce productivity by 25% in cross-functional teams.
+
+Conducted user acceptance testing and training for Power Platform deployments, ensuring 95% adoption rate and compliance with data management standards.
+
+Migrated legacy systems to cloud-based Power Apps environments, accelerating digital innovation and providing scalable solutions for enterprise needs.
+
+Partnered with Microsoft through EPMPOINT to design and conduct comprehensive training for over 320+ users from diverse organizations, directly contributing to national digital upskilling and the expansion of secure, low-code capabilities across the public and private sectors.
+
+"
               achievements={[
                 "🎯 Power Apps Development: Built 30+ Canvas Apps with complex business logic, created 15+ Model-driven Apps with custom entities and business process flows",
                 "🔗 SharePoint Integration: Developed SPFx web parts with React/TypeScript, integrated Power Apps with SharePoint lists and document libraries",
@@ -348,7 +362,7 @@ function App() {
             <div className="education-card">
               <h3>Master of Science in Computer Science</h3>
               <h4>Texas A&M University - Kingsville</h4>
-              <p>December 2013</p>
+              <p>May 2014</p>
             </div>
             <div className="education-card">
               <h3>Bachelor of Science in Computer Science</h3>
@@ -366,7 +380,8 @@ function App() {
                 "Microsoft Certified Solution Developer (MCSD)",
                 "Microsoft Certified Solution Associate (MCSA)",
                 "Microsoft Certified Professional (MCP)",
-                "Microsoft Specialist (MS)"
+                "Microsoft Specialist (MS)",
+                "Microsoft Applied Skills - Creating Agents using Microsoft Copilot studio"
               ].map((cert, index) => (
                 <div key={index} className="cert-badge">{cert}</div>
               ))}

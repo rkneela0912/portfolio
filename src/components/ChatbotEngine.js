@@ -82,7 +82,7 @@ export class ChatbotEngine {
         {
           degree: "Master of Science in Computer Science",
           institution: "Texas A&M University - Kingsville",
-          year: "2013",
+          year: "2014",
           location: "Kingsville, TX"
         },
         {
@@ -106,6 +106,19 @@ export class ChatbotEngine {
             "Developed custom plugins for Microsoft Copilot for Microsoft 365",
             "Created SharePoint integrated Power Apps canvas applications",
             "Automated business processes using Power Automate flows"
+          ]
+        },
+        {
+          name: "Centurion Health",
+          role: "Senior Power Platform & SharePoint Developer", 
+          period: "2022",
+          location: "Vienna, VA",
+          responsibilities: [
+            "played a pivotal role in transforming HR operations and Telehealth applications.",
+            "Enhanced the HR Onboarding application, eliminated manual processes, improving efficiency.",
+            "Developed responsive client-side web parts using SharePoint Framework (SPFx)",
+            "Implemented custom solutions integrating with SharePoint Online, Nintex flows, Nintext Forms",
+            "integrated the UKG system with .NET and SharePoint solutions to resolve data flow issues, while ensuring compliance and security through optimized Nintex workflows"
           ]
         },
         {
