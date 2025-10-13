@@ -289,7 +289,7 @@ function App() {
               period="2022 - Present"
               title="Power Platform & AI Solutions Architect"
               //company="Department of Defense - Washington Headquarters Services"
-              description="Leading AI enablement initiatives and Copilot development. Architected custom Microsoft Copilot agents achieving 40% improvement in task completion accuracy. Implemented enterprise-grade conversational AI solutions using Azure Bot Framework."
+              description="Led full-stack development lifecycle and SharePoint migration projects. Developed custom SharePoint web parts using SPFx and implemented responsive user interfaces with canvas applications. Leading AI enablement initiatives and Copilot development. Architected custom Microsoft Copilot agents achieving 40% improvement in task completion accuracy. Implemented enterprise-grade conversational AI solutions using Azure Bot Framework. Managed complex SharePoint migrations and developed comprehensive Power Platform solutions. Extended Dynamics 365 CE functionalities and implemented AI Builder for machine learning model development."
               achievements={[
                 "🎯 Power Apps Development: Built 30+ Canvas Apps with complex business logic, created 15+ Model-driven Apps with custom entities and business process flows",
                 "🔗 SharePoint Integration: Developed SPFx web parts with React/TypeScript, integrated Power Apps with SharePoint lists and document libraries",
@@ -298,15 +298,7 @@ function App() {
                 "📊 Power BI Mastery: Created executive dashboards with Power Query, DAX calculations, custom visuals, and real-time data streaming",
                 "🗄️ SQL Integration: Optimized SQL queries for Power Apps data sources, implemented stored procedures for complex business logic",
                 "🤖 AI & Copilot: Developed custom Microsoft Copilot agents, prompt engineering, and AI Builder models for document processing",
-                "⚡ Power Automate: Built 50+ automated workflows with approvals, notifications, and complex conditional logic"
-              ]}
-            />
-            <ExperienceCard
-              period="2019 - 2022"
-              title="Senior Power Platform & SharePoint Consultant"
-              //company="Health Resources and Services Administration"
-              description="Managed complex SharePoint migrations and developed comprehensive Power Platform solutions. Extended Dynamics 365 CE functionalities and implemented AI Builder for machine learning model development."
-              achievements={[
+                "⚡ Power Automate: Built 50+ automated workflows with approvals, notifications, and complex conditional logic",
                 "📱 Power Apps Portfolio: Delivered 20+ Canvas Apps for field operations, 10+ Model-driven Apps for case management with custom PCF controls",
                 "🌐 SharePoint Excellence: Led SharePoint Online migrations, developed modern sites with SPFx extensions and custom web parts",
                 "🏗️ Dataverse Architecture: Designed enterprise data models with 100+ custom tables, implemented security roles and field-level permissions",
@@ -314,16 +306,8 @@ function App() {
                 "📈 Power BI Analytics: Built comprehensive reporting suite with paginated reports, embedded analytics, and automated data refresh",
                 "💽 Database Management: Optimized SQL Server performance, created views and indexes for Power Platform data sources",
                 "🔄 Automation Excellence: Developed approval workflows, document generation processes, and scheduled data synchronization flows",
-                "🎨 UI/UX Innovation: Designed responsive interfaces with custom themes, branding, and accessibility compliance"
-              ]}
-            />
-            <ExperienceCard
-              period="2014 - 2019"
-              title="Power Platform & SharePoint Solutions Developer"
-              //company="New Orleans Police Department"
-              description="Led full-stack development lifecycle and SharePoint migration projects. Developed custom SharePoint web parts using SPFx and implemented responsive user interfaces with canvas applications."
-              achievements={[
-                "🚀 Power Apps Foundation: Built first-generation Canvas Apps for incident reporting, Model-driven Apps for case tracking with custom forms",
+                "🎨 UI/UX Innovation: Designed responsive interfaces with custom themes, branding, and accessibility compliance",
+                  "🚀 Power Apps Foundation: Built first-generation Canvas Apps for incident reporting, Model-driven Apps for case tracking with custom forms",
                 "📚 SharePoint Modernization: Migrated SharePoint 2013 to 2016/Online, developed custom master pages and page layouts",
                 "🗃️ Data Platform Setup: Established Dataverse environment, created foundational tables and relationships for police operations",
                 "🔧 Custom Development: Built custom connectors for legacy mainframe systems, implemented SOAP/REST API integrations",
@@ -333,6 +317,7 @@ function App() {
                 "🔐 Security Implementation: Configured role-based access control, implemented audit trails and compliance reporting"
               ]}
             />
+            
           </div>
         </div>
       </section>
@@ -405,7 +390,11 @@ function App() {
             </div>
             <div className="contact-item">
               <Globe size={24} />
-              <span>www.ranjithneela.com</span>
+              <span><a href="www.ranjithneela.com">www.ranjithneela.com</a></span>
+            </div>
+             <div className="contact-item">
+              <Globe size={24} />
+              <span><a href="https://github.com/rkneela0912">Open Source Projects Contribution</a></span>
             </div>
           </div>
         </div>
