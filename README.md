@@ -13,7 +13,7 @@ A modern, interactive resume website built with React, featuring an AI-powered c
 
 ## 🚀 Live Demo
 
-Visit the live website: [https://your-username.github.io/resume-website](https://your-username.github.io/resume-website)
+Visit the live website: [https://rkneela0912.github.io/portfolio/](https://rkneela0912.github.io/portfolio/)
 
 ## 🛠️ Technologies Used
 
