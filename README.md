@@ -185,8 +185,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Ranjith Neela**
-- Email: connect@ranjithneela.com
-- Phone: (443) 574-4254
+- Email: iamranjithkneela@gmail.com
+- Phone: (330) 687-2781
 - Website: www.ranjithneela.com
 
 ## 🙏 Acknowledgments
