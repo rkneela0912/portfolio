@@ -2,6 +2,8 @@
 
 A modern, interactive resume website built with React, featuring an AI-powered chatbot and comprehensive skill showcases. This website demonstrates expertise in SharePoint development, Power Platform, AI enablement engineering, and conversational AI solutions.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/rkneela0912/portfolio.svg)](https://github.com/rkneela0912/portfolio/stargazers)
 [![DOI](https://zenodo.org/badge/1019132907.svg)](https://doi.org/10.5281/zenodo.17342683)
 
 ## 🌟 Features
