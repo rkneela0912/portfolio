@@ -4,14 +4,7 @@ A modern, interactive resume website built with React, featuring an AI-powered c
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/rkneela0912/portfolio.svg)](https://github.com/rkneela0912/portfolio/stargazers)
-[![DOI](https://zenodo.org/badge/1019132907.svg)](https://doi.org/10.5281/zenodo.17342683)
-
-<p align="left">
-  <a href="https://doi.org/10.5281/zenodo.17381401">
-    <img alt="Download on Zenodo"
-         src="https://img.shields.io/badge/Download%20on-Zenodo-blue?style=for-the-badge&logo=zenodo&logoColor=white">
-  </a>
-</p>
+<a href="https://doi.org/10.5281/zenodo.17381401"><img alt="Download on Zenodo" src="https://img.shields.io/badge/Download%20on-Zenodo-blue?style=for-the-badge&logo=zenodo&logoColor=white"> </a>
 
 ## 🌟 Features
 
