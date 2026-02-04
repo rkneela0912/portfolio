@@ -16,12 +16,29 @@
   --text-light: #718096;
   --bg-primary: #ffffff;
   --bg-secondary: #f7fafc;
+  --bg-card: #ffffff;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
   --border-radius: 12px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode */
+.dark {
+  --text-primary: #f7fafc;
+  --text-secondary: #e2e8f0;
+  --text-light: #a0aec0;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --glass-bg: rgba(30, 41, 59, 0.8);
+  --glass-border: rgba(71, 85, 105, 0.4);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.4);
 }
 
 body {
@@ -49,9 +66,18 @@ body {
   transition: var(--transition);
 }
 
+.dark .navbar {
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+}
+
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.98);
   box-shadow: var(--shadow-lg);
+}
+
+.dark .navbar.scrolled {
+  background: rgba(15, 23, 42, 0.98);
 }
 
 .nav-brand {
@@ -66,6 +92,29 @@ body {
 .nav-links {
   display: flex;
   gap: 2rem;
+  align-items: center;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--text-secondary);
+  color: var(--text-secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.theme-toggle:hover {
+  background: var(--primary-gradient);
+  border-color: transparent;
+  color: white;
+  transform: rotate(180deg);
 }
 
 .nav-link {
@@ -381,13 +430,13 @@ body {
 }
 
 .stat-card {
-  background: white;
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: var(--border-radius);
   text-align: center;
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--glass-border);
   position: relative;
   overflow: hidden;
 }
@@ -428,6 +477,10 @@ body {
 .experience-section {
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   padding: 5rem 0;
+}
+
+.dark .experience-section {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
 .experience-timeline {
@@ -486,7 +539,7 @@ body {
   height: 20px;
   border-radius: 50%;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: 5px solid white;
+  border: 5px solid var(--bg-card);
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 2;
@@ -520,15 +573,19 @@ body {
 
 .experience-content {
   flex: 1;
-  background: white;
+  background: var(--bg-card);
   padding: 2.5rem;
   border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-lg);
   margin-left: 2rem;
   transition: all 0.4s ease;
   border: 1px solid rgba(102, 126, 234, 0.1);
   position: relative;
   overflow: hidden;
+}
+
+.dark .experience-content {
+  border-color: rgba(102, 126, 234, 0.2);
 }
 
 .experience-content::before {
@@ -603,11 +660,19 @@ body {
   line-height: 1.6;
 }
 
+.dark .experience-achievements li {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
 .experience-achievements li:hover {
   transform: translateX(8px);
   border-left-color: #667eea;
   background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+}
+
+.dark .experience-achievements li:hover {
+  background: linear-gradient(135deg, #334155 0%, #475569 100%);
 }
 
 .experience-achievements li::before {
@@ -660,7 +725,7 @@ body {
 }
 
 .skill-card {
-  background: white;
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
@@ -724,9 +789,18 @@ body {
   border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
+.dark .skill-tag {
+  background: rgba(102, 126, 234, 0.2);
+  color: #a5b4fc;
+}
+
 .skill-tag:hover {
   background: rgba(102, 126, 234, 0.2);
   transform: translateY(-2px);
+}
+
+.dark .skill-tag:hover {
+  background: rgba(102, 126, 234, 0.3);
 }
 
 /* Enhanced Education Section */
@@ -738,7 +812,7 @@ body {
 }
 
 .education-card {
-  background: white;
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
@@ -808,12 +882,13 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: white;
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
-  border-left: 4px solid var(--primary-gradient);
+  border-left: 4px solid #667eea;
+  text-decoration: none;
 }
 
 .contact-item:hover {
@@ -872,7 +947,7 @@ body {
 }
 
 .chatbot-container {
-  background: white;
+  background: var(--bg-card);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-xl);
   width: 100%;
@@ -941,7 +1016,7 @@ body {
 
 .chatbot-input {
   padding: 1.5rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--glass-border);
   display: flex;
   gap: 1rem;
 }
@@ -949,10 +1024,12 @@ body {
 .chatbot-input input {
   flex: 1;
   padding: 0.75rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--glass-border);
   border-radius: var(--border-radius);
   outline: none;
   transition: var(--transition);
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .chatbot-input input:focus {
@@ -1067,50 +1144,5 @@ body {
     width: 100%;
     justify-content: center;
   }
-}
-
-
-/* Hide Made with Manus footer - Aggressive approach */
-a[href*="manus.space"],
-a[href*="manus"],
-a[href*="Create my website"],
-*[class*="manus"],
-*[id*="manus"],
-footer,
-.footer,
-#footer,
-div[style*="position: fixed"],
-div[style*="position:fixed"] {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  left: -9999px !important;
-  top: -9999px !important;
-  z-index: -9999 !important;
-}
-
-/* Target specific positioning that might be used for footer */
-*[style*="bottom: 20px"],
-*[style*="bottom:20px"],
-*[style*="right: 20px"],
-*[style*="right:20px"],
-*[style*="position: fixed; bottom"],
-*[style*="position:fixed;bottom"] {
-  display: none !important;
-}
-
-/* Additional specific targeting for Manus branding */
-[data-manus],
-[data-manus-branding],
-.manus-branding,
-.manus-footer,
-#manus-footer,
-*:contains("Made with Manus"),
-*:contains("Create my website") {
-  display: none !important;
 }
 
