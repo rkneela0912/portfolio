@@ -1,15 +1,20 @@
-import { Code, Database, Cloud, Zap, Brain, Bot, Shield, Layers } from 'lucide-react';
+import { Code, Database, Cloud, Zap, Brain, Bot, Shield, Layers, Wrench } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
   <motion.div
     className="skill-card"
     style={{ '--card-color': color }}
-    whileHover={{ y: -10, scale: 1.02 }}
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    whileHover={{ y: -4 }}
     transition={{ type: "spring", stiffness: 300 }}
   >
     <div className="skill-card-header">
-      <Icon size={24} className="skill-icon" aria-hidden="true" />
+      <div className="skill-icon">
+        <Icon size={20} aria-hidden="true" />
+      </div>
       <h3>{title}</h3>
     </div>
     <div className="skill-tags" role="list" aria-label={`${title} skills`}>
@@ -26,56 +31,84 @@ const Skills = () => {
       icon: Code,
       title: "Frontend Development",
       color: "#6366f1",
-      skills: ["SharePoint Framework (SPFx)", "React", "Angular", "TypeScript", "JavaScript", "HTML5", "CSS3", "jQuery", "Bootstrap", "Node.js"]
+      skills: ["SharePoint Framework (SPFx)", "React", "TypeScript", "JavaScript", "HTML5/CSS3"]
     },
     {
       icon: Database,
       title: "Backend & Database",
       color: "#8b5cf6",
-      skills: ["C#", "ASP.NET", ".NET Framework", "SQL Server", "Oracle", "PowerShell", "PHP", "REST APIs", "SOAP Web Services", "JSON"]
+      skills: ["C#", "ASP.NET", "SQL Server", "REST APIs", "PowerShell"]
     },
     {
       icon: Cloud,
-      title: "Microsoft Cloud Platform",
-      color: "#06b6d4",
-      skills: ["SharePoint Online", "Microsoft 365", "Azure Functions", "Azure Logic Apps", "Azure DevOps", "Azure API Management", "Entra ID", "Azure Blob Storage"]
+      title: "Microsoft Cloud",
+      color: "#0ea5e9",
+      skills: ["SharePoint Online", "Microsoft 365", "Azure Functions", "Azure DevOps", "Entra ID"]
     },
     {
       icon: Zap,
       title: "Power Platform",
       color: "#10b981",
-      skills: ["Power Apps (Canvas & Model-driven)", "Power Automate", "Power BI", "Power Pages", "AI Builder", "Dataverse", "Common Data Service", "PowerFx", "Custom Connectors"]
+      skills: ["Power Apps", "Power Automate", "Power BI", "Dataverse", "Custom Connectors"]
     },
     {
       icon: Brain,
-      title: "AI & Copilot Development",
+      title: "AI & Copilot",
       color: "#f59e0b",
-      skills: ["Microsoft Copilot", "Copilot Studio", "Prompt Engineering", "Azure Cognitive Services", "Machine Learning", "Natural Language Processing", "AI Builder", "Custom Plugins"]
+      skills: ["Microsoft Copilot", "Copilot Studio", "Azure Cognitive Services", "Prompt Engineering"]
     },
     {
       icon: Bot,
-      title: "Conversational AI & Automation",
+      title: "Conversational AI",
       color: "#ef4444",
-      skills: ["Azure Bot Framework", "Bot Framework Composer", "Microsoft Copilot (formerly Power Virtual Agents)", "Multi-channel Deployment", "Workflow Automation", "Business Process Flows"]
+      skills: ["Azure Bot Framework", "Bot Composer", "Multi-channel Deployment", "NLP"]
     },
     {
       icon: Layers,
       title: "Enterprise Solutions",
       color: "#8b5cf6",
-      skills: ["Dynamics 365 CE", "SharePoint Designer", "Nintex Workflows", "InfoPath Forms", "Microsoft Forms", "XRM Toolkit", "PCF Controls", "Custom Web Parts"]
+      skills: ["Dynamics 365", "PCF Controls", "Custom Web Parts", "Nintex"]
     },
     {
       icon: Shield,
       title: "DevOps & Security",
       color: "#06b6d4",
-      skills: ["CI/CD Pipelines", "Azure DevOps", "Git", "Version Control", "Role-based Access Control (RBAC)", "Security Implementation", "Application Lifecycle Management", "PowerShell Scripting"]
+      skills: ["CI/CD Pipelines", "Git", "RBAC", "ALM", "Security Implementation"]
     }
   ];
 
   return (
-    <section id="skills" className="section skills-section" aria-labelledby="skills-title">
+    <section id="skills" className="section section-alt" aria-labelledby="skills-title">
       <div className="container">
-        <h2 id="skills-title" className="section-title">Technical Expertise</h2>
+        <div className="section-header">
+          <motion.span
+            className="section-label"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <Wrench size={14} /> Skills
+          </motion.span>
+          <motion.h2
+            id="skills-title"
+            className="section-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Technical Expertise
+          </motion.h2>
+          <motion.p
+            className="section-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            Deep expertise across the Microsoft technology stack
+          </motion.p>
+        </div>
+
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <SkillCard key={index} {...category} />
